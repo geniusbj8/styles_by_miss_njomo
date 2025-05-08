@@ -1,5 +1,3 @@
-Sure! Here is the complete `README.md` content as Markdown code, ready to copy and paste:
-
 ```markdown
 # Styles by Miss Njomo
 
@@ -7,7 +5,7 @@ An elegant e-commerce web application for showcasing and selling fashion and hou
 
 ## 🌐 Project Structure
 
-```
+
 
 styles\_by\_miss\_njomo/
 ├── admin/                  # Admin dashboard, login, and management pages
@@ -20,7 +18,7 @@ styles\_by\_miss\_njomo/
 ├── README.md               # Project documentation
 └── .htaccess               # Apache server configuration
 
-````
+
 
 ## 🛠️ Features
 
@@ -49,7 +47,6 @@ styles\_by\_miss\_njomo/
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-username/styles_by_miss_njomo.git
-````
 
 2. Import the database (SQL file not included here).
 3. Update `config/config.php` with your database credentials.
@@ -74,8 +71,6 @@ For questions or contributions, reach out via the [Contact Page](pages/contact.p
 ### License
 
 This project is private and not licensed for distribution without written permission.
-
-```
 
 Would you like me to help you include a license badge or GitHub Actions workflow badge at the top of the README?
 ```
