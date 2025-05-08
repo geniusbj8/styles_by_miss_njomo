@@ -1,0 +1,94 @@
+/* MESSAGES SECTION */
+
+.main-content {
+  margin-top: 80px;
+}
+
+.messages-section {
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.messages-table-wrapper {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.messages-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.messages-table thead {
+  background-color: #8E6CA9;
+  color: white;
+}
+
+.messages-table th,
+.messages-table td {
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.messages-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.messages-table tbody tr:hover {
+  background-color: #E7A8A0;
+  color: #8E6CA9;
+  transition: 0.3s ease;
+}
+
+.messages-table th {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 80px;
+  }
+  .messages-section {
+    padding: 10px;
+  }
+
+  .messages-table th,
+  .messages-table td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    margin-top: 80px;
+  }
+  .messages-table {
+    min-width: 400px;
+  }
+
+  .messages-table th,
+  .messages-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .messages-table {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 300px) {
+  .messages-table {
+    min-width: 300px;
+  }
+}

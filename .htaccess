@@ -1,0 +1,21 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Set the base directory
+RewriteBase /styles_by_miss_njomo/
+
+# Redirect requests without file extension to .php files (e.g., /about → /about.php)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+# Custom error pages
+ErrorDocument 400 /styles_by_miss_njomo/error/400.php
+ErrorDocument 401 /styles_by_miss_njomo/error/401.php
+ErrorDocument 403 /styles_by_miss_njomo/error/403.php
+ErrorDocument 404 /styles_by_miss_njomo/error/404.php
+ErrorDocument 500 /styles_by_miss_njomo/error/error.php
+
+
+# Force UTF-8 encoding
+AddDefaultCharset UTF-8

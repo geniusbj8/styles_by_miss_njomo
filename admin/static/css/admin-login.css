@@ -1,0 +1,148 @@
+/* Global styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e7a8a0, #8e6ca9);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #8e6ca9;
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 95%;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Input field styles */
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+  width: auto; /* Changed from 100% to auto for better alignment */
+}
+
+.input-group input {
+  width: 90%;
+  padding: 10px 40px 10px 10px; /* Increased padding for better usability */
+  border: 1px solid #ccc;
+  border-radius: 0 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #8e6ca9;
+  outline: none;
+}
+
+.input-group i {
+  position: absolute;
+  right: 10px; /* Moved icon slightly to the left */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8e6ca9;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Remember me container styles */
+.remember-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.remember-me-container input {
+  margin-right: 8px;
+}
+
+/* Submit button styles */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #8e6ca9;
+  color: white;
+  border: none;
+  border-radius: 20px 0;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7a5f9e;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Devices up to 300px */
+@media (max-width: 300px) {
+  .login-container {
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px; /* Smaller border radius */
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .input-group input {
+    padding: 8px 35px 8px 8px; /* Reduced padding */
+    font-size: 12px;
+    border-radius: 0 15px; /* Smaller border radius */
+  }
+
+  button {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 15px 0; /* Smaller border radius */
+  }
+
+  .input-group i {
+    font-size: 14px;
+    right: 8px; /* Moved icon further left */
+  }
+
+  /* Add some space between elements */
+  .input-group {
+    margin-bottom: 12px;
+  }
+
+  .remember-me-container {
+    margin-bottom: 12px;
+  }
+}

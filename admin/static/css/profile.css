@@ -1,0 +1,113 @@
+/* General styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card i {
+  font-size: 3rem;
+  color: #8e6ca9;
+  margin-bottom: 1rem;
+}
+
+.profile-card h2 {
+  font-size: 1.5rem;
+  color: #8e6ca9;
+}
+
+.profile-card p {
+  color: #333;
+}
+
+.change-password-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.change-password-form h3 {
+  color: #8e6ca9;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.visibility {
+  display: flex;
+  flex-direction: row;
+}
+
+.visibility input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-group input[type="password"] {
+  font-size: 1rem;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.primary-btn {
+  background-color: #8e6ca9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #6f5590;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-card, .change-password-form {
+    width: 100%;
+  }
+}
