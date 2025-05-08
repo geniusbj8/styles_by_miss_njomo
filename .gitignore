@@ -1,0 +1,27 @@
+# Ignore the uploads directory
+/uploads/
+
+# Ignore sensitive config file
+/config/test_config.php
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore node_modules or vendor if used
+node_modules/
+vendor/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore backup or swap files
+*~
+*.swp
+*.bak
+*.old
